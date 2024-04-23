@@ -1,9 +1,10 @@
 import Navbar from "./components/navbar/navbar"
 
 function App() {
+  const nav_links = [["History", "/"], ["Cart", "/"], ["Shop", "/"], ["Home", "/"]]
   return (
     <>
-      <Navbar />
+      <Navbar links={nav_links}/>
     </>
   )
 }

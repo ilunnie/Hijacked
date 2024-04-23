@@ -20,6 +20,17 @@
     opacity: 60%;
 }
 
+.navbar_content a {
+    color: white;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+.navbar_content a:hover {
+    color: white;
+    opacity: .75;
+}
+
 .navbar {
     height: var(--height);
     box-sizing: border-box;
@@ -31,6 +42,11 @@
 
 img {
     height: calc(var(--height) - var(--padding));
+}
+
+.horizontal_links {
+    display: flex;
+    gap: 10px;
 }
 
 .sub_option {

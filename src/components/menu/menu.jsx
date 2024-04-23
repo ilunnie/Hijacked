@@ -12,7 +12,8 @@ export default function Menu(props) {
             style={{
                 width: 10 * size,
                 '--gap-size': `${gap}px`,
-                '--gap-hover-percent': gapHover}}>
+                '--gap-hover-percent': gapHover}}
+            onClick={props.onClick ?? (() => {})}>
             <div className={style.line_bar} style={{height: thickness}}></div>
             <div className={style.line_bar} style={{height: thickness}}></div>
             <div className={style.line_bar} style={{height: thickness}}></div>
