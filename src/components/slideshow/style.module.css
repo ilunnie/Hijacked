@@ -1,0 +1,21 @@
+.slideshow_content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-size: cover;
+    background-position: center;
+}
+
+.slideshow_content button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    border-radius: 50%;
+    width: 5vh;
+    height: 5vh;
+}
+
+.slideshow_content .icon {
+    color: #FCFCFC;
+}
