@@ -7,10 +7,15 @@ import {
 
 import BuyPage from "./pages/BuyPage";
 import "./index.css";
+import ReceptionPage from "./pages/ReceptionPage";
 
 const router = createBrowserRouter([
   {
     path: "/",
+    element: <ReceptionPage/>,
+  },
+  {
+    path: "/home",
     element: <BuyPage/>,
   },
 ]);
