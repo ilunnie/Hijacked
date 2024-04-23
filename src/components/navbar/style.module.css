@@ -1,0 +1,42 @@
+:root {
+    --height: 50px;
+    --padding: 10px;
+    --sub-height: 0.695%;
+}
+
+.navbar_content {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: black;
+    opacity: .5;
+    color: white;
+}
+
+.navbar_content hr {
+    margin: 0;
+    margin-inline: 3px;
+    margin-top: calc(var(--padding) * .6);
+    opacity: 60%;
+}
+
+.navbar {
+    height: var(--height);
+    box-sizing: border-box;
+    padding: var(--padding);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+img {
+    height: calc(var(--height) - var(--padding));
+}
+
+.sub_option {
+    height: calc(var(--height) * var(--sub-height));
+    box-sizing: border-box;
+    padding-inline: var(--padding);
+    font-size: 20px;
+    margin-bottom: calc(var(--padding) * .25);
+}

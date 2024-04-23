@@ -1,0 +1,20 @@
+:root {
+    --gap-size: 5px;
+    --gap-hover-percent: 0.4
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap-size);
+    transition: gap 0.1s;
+}
+
+.menu:hover {
+    gap: calc(var(--gap-size) + var(--gap-size) * var(--gap-hover-percent));
+}
+
+.line_bar {
+    background-color: white;
+    width: 100%;
+}
