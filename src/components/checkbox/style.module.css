@@ -1,0 +1,24 @@
+:root {
+    --checkbox-border: 5px;
+    --checkbox-label-start: 10px
+}
+
+.checkbox_content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1px;
+}
+
+.checkbox_content .label {
+    margin: var(--checkbox-border);
+    color: white;
+    padding-inline-start: var(--checkbox-label-start);
+}
+
+.checkbox {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
