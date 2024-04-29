@@ -11,9 +11,7 @@
 }
 
 .checkbox_content .label {
-    margin: var(--checkbox-border);
     color: white;
-    padding-inline-start: var(--checkbox-label-start);
 }
 
 .checkbox {

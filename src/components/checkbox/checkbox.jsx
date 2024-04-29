@@ -24,7 +24,12 @@ export default function Checkbox(props) {
             style={{ boxShadow: boxShadowStyle }}
             onClick={() => props.onChange()}
             >
-            <div className={style["label"]}>
+            <div
+                className={style["label"]} 
+                style={{
+                    margin: props.border ?? "var(--checkbox-border)",
+                    paddingInlineStart: props.margin ?? "var(--checkbox-label-start)"
+                }}>
                 <label>Label</label>
             </div>
             <div ref={checkbox} className={style["checkbox"]} style={{ width: checkbox_width }}>

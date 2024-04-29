@@ -1,0 +1,8 @@
+:root {
+    --select-border: 5px;
+    --select-label-start: 10px
+}
+
+.select_content .label {
+    color: white;
+}
