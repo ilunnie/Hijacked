@@ -18,15 +18,12 @@ function App() {
     setCheckbox(!checkbox)
   }
 
-  const handleSelectChange = (event) => {
-    setSelectedOption(event.target.value);
+  const handleSelectChange = (value) => {
+    setSelectedOption(value);
   };
 
   return (
     <>
-      <Navbar links={nav_links}/>
-      <SlideShow images={[hijacked, yatch]}/>
-      <Checkbox checked={checkbox} onChange={setCheckboxValue}/>
       <Select value={selectedOption} onChange={handleSelectChange}>
         <option value="">Option Input</option>
         <option value="option1">option - I</option>
@@ -34,6 +31,9 @@ function App() {
         <option value="option3">Option - III</option>
         <option value="option3">Option - IV</option>
       </Select>
+      <Navbar links={nav_links}/>
+      <SlideShow images={[hijacked, yatch]}/>
+      <Checkbox checked={checkbox} onChange={setCheckboxValue}/>
     </>
   )
 }
