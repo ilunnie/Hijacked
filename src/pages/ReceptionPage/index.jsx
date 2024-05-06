@@ -21,7 +21,7 @@ export default function ReceptionPage() {
           }>ENTRAR</button>
         </div>
       </div>
-      <div id="logindiv" className={`${style.floating} ${style.hide}`}>
+      <div id="logindiv" className={`${style.floating} ${style.hide}`} style={{top: '25vh'}}>
         <div className={style.row}>
           <div className={style.card}>
             <img
@@ -33,7 +33,7 @@ export default function ReceptionPage() {
           </div>
         </div>
         <div className={style.row}>
-          <div className={style.card} style={{justifyContent: 'left', flexFlow: 'column',height: 'auto', paddingTop: '5vh'}}>
+          <div className={style.card} style={{justifyContent: 'left', flexFlow: 'column', height: 'auto', paddingTop: '5vh'}}>
             <div className={style.formGroup}>
               <label htmlFor="login">Login:</label>
               <input className={style.inputForm} type="text" id="login" />
