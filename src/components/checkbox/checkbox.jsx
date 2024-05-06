@@ -30,7 +30,7 @@ export default function Checkbox(props) {
                     margin: props.border ?? "var(--checkbox-border)",
                     paddingInlineStart: props.margin ?? "var(--checkbox-label-start)"
                 }}>
-                <label>Label</label>
+                <label>{props.label ? props.label : "Label" }</label>
             </div>
             <div ref={checkbox} className={style["checkbox"]} style={{ width: checkbox_width }}>
                 {props.checked &&
